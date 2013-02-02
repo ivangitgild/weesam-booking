@@ -11,7 +11,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
-<div class="navbar navbar-inverse navbar-static-top">
+<div class="navbar navbar-fixed-top">
   <div class="navbar-inner">
     <div class="container">
  
@@ -23,12 +23,12 @@
 	    </a>
 
 	    <!-- Be sure to leave the brand out there if you want it shown -->
-	    <a class="brand" href="#">Project name</a>
+	    <a class="brand" href="#">Weesam Booking System</a>
 
 	    <!-- Everything you want hidden at 940px or less, place within here -->
 	    <div class="nav-collapse collapse">
 	      <!-- .nav, .navbar-search, .navbar-form, etc -->
-	      <ul class='nav'>
+	      <ul class='nav pull-right'>
 	      	<li><%= link_to 'Link 1', '#' %></li>
 	      	<li><%= link_to 'Link 2', '#' %></li>
 	      	<li><%= link_to 'Link 3', '#' %></li>
@@ -40,22 +40,35 @@
   </div>
 </div>
 
-<div class='container'>
-	<div class='row'>
-		<div class='span9'><%= yield %></div>
-		<div class='span3'>
-			<h2>About Us</h2>
-			<p>
-				Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-				consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-				cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-				proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-			</p>
+<div id='wrap'>
+	<div id='main' class='container'>
+		
+		<div class='row'>
+			<div class='span9'>
+				<%= yield %>
+			</div>
+			<div class='span3 sidebar-right'>
+				<h2>About Us</h2>
+				<p>
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+					consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+					cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+					proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+
+				</p>
+			</div>
 		</div>
+
 	</div>
 </div>
+
+<footer class='footer'>
+	<div class='container'>
+		&copy; Weberock 2013
+	</div>
+</footer>
 
 </body>
 </html>

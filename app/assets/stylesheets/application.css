@@ -9,5 +9,36 @@
  * compiled file, but it's generally better to create a new file per style scope.
  *
  *= require_self
+ *= require bootstrap_and_overrides
  *= require_tree .
  */
+
+html, body
+{
+  height:100%;
+  background-color: #FFFEFA !important;
+}
+ 
+#wrap
+{
+  min-height: 100%;
+}
+ 
+#main
+{
+  overflow: auto;
+  padding-bottom: 150px; /* this needs to be bigger than footer height*/
+}
+ 
+.footer
+{
+  position: relative;
+  margin-top: -100px; /* negative value of footer height */
+  height: 100px;
+  clear: both;
+  padding-top: 20px;
+  background-color: #fc6;
+  border-top: 1px solid #f90;
+  text-align: center;
+  color: #960;
+}
