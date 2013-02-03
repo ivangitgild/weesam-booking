@@ -16,7 +16,7 @@
 html, body
 {
   height:100%;
-  background-color: #E1E1E1 !important;
+  background-color: whiteSmoke !important;
 }
  
 #wrap
@@ -39,13 +39,23 @@ html, body
   min-height: 500px;
 }
 
-#wrap .nav li a {
-  line-height: 40px;
+#wrap .nav li a
+{
+  line-height: 25px;
   text-align: center;
 }
 
-#wrap .nav li a:hover {
-  border-right: none;
+#wrap .nav li a > i.icon
+{
+  width: 100%;
+  display: inline-block;
+  padding: 5px 0;
+  line-height: 1px;
+}
+
+#wrap .nav li a > span.lbl
+{
+  font-size: 8pt;
 }
  
 #main

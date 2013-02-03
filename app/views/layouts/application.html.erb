@@ -44,10 +44,18 @@
 	<div id='main' class='container-fluid'>
 		<div class="tabbable tabs-left">
 			<ul class="nav nav-tabs">
-		    <li class='active'><%= link_to 'Link 1', '#' %></li>
-      	<li><%= link_to 'Link 2', '#' %></li>
-      	<li><%= link_to 'Link 3', '#' %></li>
-      	<li><%= link_to 'Link 4', '#' %></li>
+		    <li class='active'>
+		    	<%= link_to raw("<i class='icon icon-large icon-user'></i><span class='lbl'>Link 1</span>"), '#' %>
+		    </li>
+      	<li>
+		    	<%= link_to raw("<i class='icon icon-large icon-file-alt'></i><span class='lbl'>Link 2</span>"), '#' %>
+		    </li>
+      	<li>
+		    	<%= link_to raw("<i class='icon icon-large icon-list'></i><span class='lbl'>Link 3</span>"), '#' %>
+		    </li>
+      	<li>
+		    	<%= link_to raw("<i class='icon icon-large icon-cog'></i><span class='lbl'>Link 4</span>"), '#' %>
+		    </li>
 		  </ul>
 
 			<div class="tab-content">
