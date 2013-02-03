@@ -19,18 +19,24 @@ body { padding-top: 100px; }
 	border-bottom: 5px solid #ff9500;
 }
 
-.navbar-inner
+.navbar
 {
-	.collapse a:hover
+	.collapse
 	{
-		border-top: 5px solid #ff9500;
-		line-height: 15px !important;
+		a:hover, .active a
+		{
+			border-top: 5px solid #ff9500;
+			line-height: 15px !important;
+		}
 	}
 
-	.in a:hover
+	.in
 	{
-		border-top: none !important;
-		line-height: 20px !important;
+		a:hover, .active a
+		{
+			border-top: none !important;
+			line-height: 20px !important;
+		}
 	}
 }
 
@@ -70,4 +76,5 @@ body { padding-top: 100px; }
 @navbarText: #f5f5f5;
 @navbarLinkColor: #ffc573;
 @navbarLinkBackgroundHover: #ffc573;
+@navbarLinkColorActive: #ffc573;
 @navbarHeight: 80px;
